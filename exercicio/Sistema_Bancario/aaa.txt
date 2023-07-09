@@ -1,0 +1,33 @@
+#include <locale.h>
+#include <iostream>
+#include <vector>
+#include <string>
+
+struct Usuario {
+    int id;
+    std::string nome;
+};
+
+int main() {
+    setlocale(LC_ALL, "Portuguese_Brazil");
+    // Criando um vetor de usuários
+    std::vector<Usuario> listaDeUsuarios;
+
+    // Criando alguns usuários e adicionando ao vetor
+    Usuario usuario1 = {1, "João"};
+    listaDeUsuarios.push_back(usuario1);
+
+    Usuario usuario2 = {2, "Maria"};
+    listaDeUsuarios.push_back(usuario2);
+
+    Usuario usuario3 = {3, "Pedro"};
+    listaDeUsuarios.push_back(usuario3);
+
+    // Acessando os usuários na lista
+    std::cout << "Usuários na lista:" << std::endl;
+    for (const auto& usuario : listaDeUsuarios) {
+        std::cout << "ID: " << usuario.id << ", Usuário: " << usuario.nome << std::endl;
+    }
+
+    return 0;
+}
