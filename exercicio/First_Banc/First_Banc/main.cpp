@@ -77,9 +77,12 @@ void menu_gerenciar_usuarios(void) {
 	}
 }
 
-void menu_gerenciar_contas(void) {
+void menu_gerenciar_contas(Usuario usuario) {
 	cout << "------FIRST BANCK------\n";
-	cout << "";
+	string nome = usuario.getnome();
+	int id = usuario.getid();
+	cout << "Bem vindo a sua conta " << nome << '\n';
+	/*cout << "Seu saudo atual é de: R$" << to_string(conta.getsaldo()); */
 }
 
 int main(void) {
@@ -103,7 +106,7 @@ int main(void) {
 			Usuario user = get_usuario_com_id(id);
 			if (logar_usuario(user, senha) == true) {
 				cout << "Login realizado com sucesso!\n";
-				menu_gerenciar_contas();
+				menu_gerenciar_contas(user);
 				break;
 			}
 			else {

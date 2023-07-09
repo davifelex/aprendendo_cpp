@@ -51,3 +51,11 @@ bool Conta::depositar(double valor) {
 vector <operacao> Conta::getextrato(void) {
 	return this->extrato;
 }
+
+vector <Conta> contas;
+
+Conta criar_conta(Usuario usuario) {
+	Conta conta(usuario.getid());
+	contas.push_back(conta);
+	return conta;
+}

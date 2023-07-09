@@ -3,6 +3,7 @@
 #define CONTA_H
 #include <string>
 #include <vector>
+#include "usuarios.h"
 
 struct operacao {
     std::string tipo;

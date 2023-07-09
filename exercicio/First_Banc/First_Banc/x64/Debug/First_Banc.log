@@ -1,5 +1,4 @@
-﻿  conta.cpp
-  main.cpp
+﻿  main.cpp
 C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0xf4 que é inválido no conjunto de caracteres de origem atual (página de código 65001).
 C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x11e que é inválido no conjunto de caracteres de origem atual (página de código 65001).
 C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x132 que é inválido no conjunto de caracteres de origem atual (página de código 65001).
@@ -12,9 +11,10 @@ C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1
 C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x53a que é inválido no conjunto de caracteres de origem atual (página de código 65001).
 C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x5c7 que é inválido no conjunto de caracteres de origem atual (página de código 65001).
 C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x602 que é inválido no conjunto de caracteres de origem atual (página de código 65001).
-C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x837 que é inválido no conjunto de caracteres de origem atual (página de código 65001).
-C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x91d que é inválido no conjunto de caracteres de origem atual (página de código 65001).
-C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0xa8d que é inválido no conjunto de caracteres de origem atual (página de código 65001).
+C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x86e que é inválido no conjunto de caracteres de origem atual (página de código 65001).
+C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x8f1 que é inválido no conjunto de caracteres de origem atual (página de código 65001).
+C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0x9d7 que é inválido no conjunto de caracteres de origem atual (página de código 65001).
+C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\First_Banc\main.cpp(1,1): warning C4828: O arquivo contém um caractere começando com o deslocamento 0xb4b que é inválido no conjunto de caracteres de origem atual (página de código 65001).
   usuarios.cpp
   Gerando Código...
   First_Banc.vcxproj -> C:\DESENVOLVIMENTO\c++\aprendendo_c++\exercicio\First_Banc\x64\Debug\First_Banc.exe
