@@ -18,11 +18,16 @@ private:
 
 public:
     Conta(int id);
-
+    int getid(void);
     double getsaldo(void);
     bool sacar(double valor);
     bool depositar(double valor);
+    bool receber_transferencia(double valor);
+    bool transferir(double valor, int id);
+    
+    
     std::vector<operacao> getextrato(void);
 };
-
-#endif // !CONTA_H
+bool criar_conta(Usuario usuario);
+Conta* get_conta_com_id(int id);
+#endif // CONTA_H

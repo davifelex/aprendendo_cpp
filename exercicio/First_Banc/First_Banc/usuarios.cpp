@@ -67,9 +67,9 @@ bool cadastrar_usuario(string nome, string senha) {
 			id = ids.back() + 1;
 		}
 	}
-	
 	Usuario user(id, nome, senha);
 	lista_usuarios.push_back(user);
+	criar_conta(user);
 	return true;
 }
 

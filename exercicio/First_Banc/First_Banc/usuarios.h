@@ -3,7 +3,6 @@
 #define USUARIOS_H
 #include <string>
 #include <vector>
-#include "conta.h"
 using namespace std;
 
 class Usuario {

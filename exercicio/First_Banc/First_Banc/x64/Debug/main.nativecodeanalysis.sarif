@@ -26,7 +26,7 @@
             "analysisTarget"
           ],
           "hashes": {
-            "sha-256": "256cb81d7e1c2ff926413b4b3c875d62a0883a2bc88ee51747cfa6011372cfda"
+            "sha-256": "d159e47799b1772445a4f2f8eff287feed96227d23dedb252523ef47d74a47e3"
           }
         },
         {
@@ -34,7 +34,15 @@
             "uri": "file:///c:/desenvolvimento/c++/aprendendo_c++/exercicio/first_banc/first_banc/usuarios.h"
           },
           "hashes": {
-            "sha-256": "d098b083d1cc00bac9372b0d4217d9f563aa12ed01f5874de5185f7d4dd60f08"
+            "sha-256": "d24b9b1c9b5b646a18643e4f1898dc0fdb11b4aae7fd6a75d4dbe5e6591cf7e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/desenvolvimento/c++/aprendendo_c++/exercicio/first_banc/first_banc/conta.h"
+          },
+          "hashes": {
+            "sha-256": "97a590eeae282ab651618a7949add2d2c3270cd509a75bf87d116c1c717937df"
           }
         }
       ]

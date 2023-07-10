@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <iomanip>
 #include "usuarios.h"
 #include "conta.h"
 using namespace std;
@@ -81,8 +82,80 @@ void menu_gerenciar_contas(Usuario usuario) {
 	cout << "------FIRST BANCK------\n";
 	string nome = usuario.getnome();
 	int id = usuario.getid();
+	Conta* conta = get_conta_com_id(id);
 	cout << "Bem vindo a sua conta " << nome << '\n';
-	/*cout << "Seu saudo atual é de: R$" << to_string(conta.getsaldo()); */
+	cout << "Seu saldo atual é de: R$" << fixed << setprecision(2) << conta->getsaldo() << '\n';
+	cout << "Escolha a opção que deseja realizar:\n[1]Depositar\n[2]Sacar\n[3]Transferir\n[4]Exibir extrato\n";
+	int opcao;
+	cin >> opcao;
+	if (opcao == 1) {
+		cout << "Digite o valor que deseja depositar:\n";
+		double valor;
+		cin >> valor;
+		if (valor > 0) {
+			bool responce = conta->depositar(valor);
+			cout << "Seu novo saldo é: R$ " << conta->getsaldo() << '\n';
+			if (responce == true) {
+				cout << "Deposito realizado com sucesso";
+			}
+			else{
+				cout << "Ocorreu um erro ao tentar fazer o deposito";
+			}
+		}
+		else {
+			cout << "O valor do deposito não pode ser abaixo de 1.0";
+		}
+	}
+	else if (opcao == 2) {
+		double valor;
+		cout << "Digite o valor que deseja sacar:\n";
+		cin >> valor;
+		if (conta->getsaldo() - valor >= 0) {
+			bool responce = conta->sacar(valor);
+			if (responce == true) {
+				cout << "Saque realizado com sucesso.\n";
+			}
+			else {
+				cout << "Ocorreu um erro ao tentar realizar o saque.\n";
+			}
+		}
+		else {
+			cout << "Não é possivel realizar um saque de uma valor superior ao seu saldo.\n";
+		}
+		
+	}
+	else if (opcao == 3) {
+		cout << "Qual o id da pessoa que deverá receber o dinheiro?\n";
+		int id_alvo;
+		cin >> id_alvo;
+		cout << "Qual o valor que deseja enviar?\n";
+		double valor;
+		cin >> valor;
+		if ((conta->getsaldo() - valor) >= 0) {
+			bool responce = conta->transferir(valor, id_alvo);
+			if (responce == true) {
+				cout << "Transferencia realizada com sucesso";
+			}
+			else {
+				cout << "Ocorreu um erro ao tentar fazer a transferência, verifique os dados e tente novamente";
+			}
+		}
+		else {
+			cout << "Saldo insuficiente";
+		}
+		
+	}
+	else if (opcao == 4) {
+		auto extrato = conta->getextrato();
+		for (int i = 0; i < extrato.size(); i++) {
+			cout << extrato[i].tipo << "    ||    " << extrato[i].valor << '\n';
+		}
+	}
+	cout << "Digite 1 para voltar ao menu principal e 2 para sair:\n";
+	cin >> opcao;
+	if (opcao == 1) {
+		menu_gerenciar_contas(usuario);
+	}
 }
 
 int main(void) {
@@ -107,6 +180,7 @@ int main(void) {
 			if (logar_usuario(user, senha) == true) {
 				cout << "Login realizado com sucesso!\n";
 				menu_gerenciar_contas(user);
+				main();
 				break;
 			}
 			else {
